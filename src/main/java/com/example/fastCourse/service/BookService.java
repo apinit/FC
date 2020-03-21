@@ -28,4 +28,15 @@ public class BookService {
     public Book create(Book book) {
         return bookRepository.save(book);
     }
+
+    public void deleteBook(final long id) {
+        try {
+            Book book = new Book();
+            book.setBookId(id);
+            bookRepository.delete(book);
+        } catch (Exception e) {
+            // throw error exception
+            throw e;
+        }
+    }
 }

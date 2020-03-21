@@ -51,4 +51,17 @@ public class BookController {
         }
         return "Can't create a book";
     }
+
+    @DeleteMapping("/deleteBook")
+    public String delete(@RequestParam long bookId) {
+        String msg;
+        try {
+            bookService.deleteBook(bookId);
+            msg = "Delete data success!";
+        } catch (Exception e) {
+            e.printStackTrace();
+            msg = e.getMessage();
+        }
+        return msg;
+    }
 }

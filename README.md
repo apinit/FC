@@ -6,10 +6,10 @@
 ```
 http://localhost:8280/book/addBook
 ```
-### Body
+### Body e.g.
 ```
 {
-	"name": "Enter a book name",
+	"name": "Angular Framework Fundamental",
 	"desc": "Description"
 }
 ```
@@ -20,7 +20,7 @@ http://localhost:8280/book/addBook
 http://localhost:8280/book/getBooks
 ```
 
-### Delete a book by id. -> 
+### Delete a book by id.
 ```
 http://localhost:8280/book/deleteBook
 ```

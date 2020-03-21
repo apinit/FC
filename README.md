@@ -24,7 +24,7 @@ http://localhost:8280/book/getBooks
 ```
 http://localhost:8280/book/deleteBook
 ```
-Params name is bookId
+Params name is bookId, e.g.
 ```
   bookId = 1
 ```
